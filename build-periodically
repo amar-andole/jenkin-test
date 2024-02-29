@@ -1,7 +1,7 @@
 pipeline {
     agent 'none'
     triggers { 
-        pollSCM ('* * * * *')
+        pollSCM ('* * * 4 *')
     }
     parameters {
         string (name : 'amar_andole', defaultValue : 'input-amar', description : 'this is a string parameter') 
